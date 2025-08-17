@@ -19,7 +19,7 @@ jobs:
   # this workflow contain a single job called "build"
   build-and-release:
     # this a type of runner that the job would run 
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
   # sequence represent a list of task that would be run as part of job
   steps:
