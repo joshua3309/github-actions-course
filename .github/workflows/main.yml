@@ -1,6 +1,6 @@
 # thi is a basic workflow to help you get started with github
 
-name: ci 
+name: c1
 
 # control when the workflow will run
 on:
