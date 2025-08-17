@@ -1,6 +1,6 @@
 # thi is a basic workflow to help you get started with github
 
-name: c1
+name: ci
 
 # control when the workflow will run
 on:
@@ -15,7 +15,7 @@ on:
  workflow_dispatch:
 
 # a workflow run is made of job that run parallel or sequential
-job:
+jobs:
   # this workflow contain a single job called "build"
   build-and-release:
     # this a type of runner that the job would run 
