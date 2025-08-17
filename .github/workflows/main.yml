@@ -21,21 +21,21 @@ jobs:
     # this a type of runner that the job would run 
     runs-on: ubuntu-latest
 
-  # sequence represent a list of task that would be run as part of job
-  steps:
-    # check_out your workspace under GITHUB_workspace, so as job can access it 
-    - uses: actions/checkout@v3
+    # sequence represent a list of task that would be run as part of job
+    steps:
+      # check_out your workspace under GITHUB_workspace, so as job can access it 
+      - uses: actions/checkout@v3
 
-    # run a single line command using runner shell
-    - name: run a one-line script
-      run: echo hello, world!
+      # run a single line command using runner shell
+      - name: Run a one-line script
+        run: echo hello, world!
       
-    # run a set of command using runner shell
-    - name: run a multi line script
-      run: |
-      echo Add action other action to build,
-      echo test and the deploy your project.
+      # run a set of command using runner shell
+      - name: run a multi-line script
+        run: |
+          echo "Add action other action to build,"
+          echo "test and the deploy your project."
 
-    # run a set of command 
+     
 
   
