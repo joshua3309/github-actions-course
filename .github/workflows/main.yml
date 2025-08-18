@@ -11,8 +11,8 @@ on:
   pull_request: 
     branches: [ main ]
 
- # allow you to run the workflow manually from action tab 
- workflow_dispatch:
+  # allow you to run the workflow manually from action tab 
+  workflow_dispatch:
 
 # a workflow run is made of job that run parallel or sequential
 jobs:
