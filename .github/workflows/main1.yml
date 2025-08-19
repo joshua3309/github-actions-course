@@ -5,7 +5,7 @@ name: manual_workflow
 # control when workflow will run. work flow can run when manually triggered through ui or
 # api
 on:
-   workflow_dispitch:
+   workflow_dispatch:
      # inputs the name accept
      inputs:
        name:
