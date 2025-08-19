@@ -1,0 +1,31 @@
+# this is a basic workflow that is manual triggered
+
+name: manual_workflow 
+
+# control when workflow will run. work flow can run when manually triggered through ui or
+# api
+on:
+   workflow_dispitch:
+     # inputs the name accept
+     inputs:
+       name:
+         # friendly description to show on ui instead of name
+         description: 'person to greet'
+         # default value if not explicitly provided 
+         default: 'world'
+         # input has to be privided before work flow can run
+         rquired: true
+         # the type of input 
+         type: string
+
+# a workflow run is made of one or more jobs that can run parallel or sequentially 
+jobs: 
+  # the workflow contains a single job 'greet'
+  greet:
+    # the type of runner that the jobs would run on
+    runs-on: ubuntu-latest
+    # steps represent a sequence of task that can be executed as part of jobs
+    steps:
+    # run a single line of command using runner shell
+    - name: send greetings
+    run: echo "hello ${{ input name }}"
