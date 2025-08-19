@@ -27,5 +27,5 @@ jobs:
     # steps represent a sequence of task that can be executed as part of jobs
     steps:
     # run a single line of command using runner shell
-    - name: send greetings
-    run: echo "hello ${{ input name }}"
+      - name: send greetings
+        run: echo "hello ${{ inputs.name }}"
